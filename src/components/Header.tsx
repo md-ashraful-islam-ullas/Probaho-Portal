@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import NavLinks from "./NavLinks";
 
 const Header = () => {
   const date = new Date().toLocaleDateString("bn-BD", {
@@ -29,16 +29,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-6 py-2">
-            <Link href={'#'}>হোম</Link>
-            <Link href={'#'}>রাজনীতি</Link>
-            <Link href={'#'}>বিশ্ব</Link>
-            <Link href={'#'}>অর্থনীতি</Link>
-            <Link href={'#'}>স্বাস্থ্য</Link>
-            <Link href={'#'}>খেলা</Link>
-            <Link href={'#'}>প্রযুক্তি</Link>
-            <Link href={'#'}>দেখুন</Link>
-        </div>
+        <NavLinks />
       </div>
     </nav>
   );
