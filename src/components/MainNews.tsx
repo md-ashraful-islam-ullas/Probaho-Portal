@@ -13,7 +13,7 @@ const MainNews = ({ news }: {news: News[]}) => {
   const [firstNews, ...otherNews] = news;
   return (
     <div className="flex gap-10">
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 w-150 shadow-sm">
         <figure>
           <Image
             src={firstNews.imageUrl}
@@ -29,7 +29,7 @@ const MainNews = ({ news }: {news: News[]}) => {
         </div>
       </div>
 
-      <div className="w-96 rounded-lg border border-gray-300 bg-base-100 overflow-hidden">
+      <div className="rounded-lg border border-gray-300 bg-base-100 overflow-hidden">
         {otherNews.slice(0, 4).map((on) => (
           <div
             key={on.id}
